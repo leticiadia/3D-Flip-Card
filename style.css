@@ -1,0 +1,151 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 65.2%;
+  background: linear-gradient(45deg, #0f2b05 0%, #000 100%);
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 100vh;
+}
+
+.card,
+.front-card,
+.content,
+.back-card {
+  position: absolute;
+}
+
+.card {
+  height: 24rem;
+  width: 16rem;
+
+  transform-style: preserve-3d;
+  perspective: 100rem;
+}
+
+.card:hover .back-card {
+  transform: rotateY(0deg);
+}
+
+.card:hover .front-card {
+  transform: rotateY(-180deg);
+}
+
+.card .image {
+  display: flex;
+  justify-content: center;
+
+  padding: 1.6rem 0;
+}
+
+.front-card,
+.back-card {
+  height: 100%;
+  width: 100%;
+  text-align: center;
+
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(assets/images/background-card.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border-radius: 0.8rem;
+
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0.2, 0.2, 1);
+}
+
+.content {
+  left: 0;
+  top: 50%;
+  width: 100%;
+  perspective: 10rem;
+  transform: translateY(-50%) translateZ(6rem) scale(0.94);
+}
+
+.front p {
+  color: white;
+  font-size: 2.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.front p::after {
+  content: "";
+  display: block;
+
+  height: 0.2rem;
+  width: 6.4rem;
+  margin: 0 auto;
+  margin-top: 0.8rem;
+
+  background-color: white;
+}
+
+.front span {
+  color: white;
+  font-size: 1.6rem;
+}
+
+.back-card {
+  background: #185b34;
+  transform: rotateY(180deg);
+}
+
+.back {
+  color: white;
+  padding: 0.8rem;
+}
+
+.back h2 {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+.back span {
+  font-size: 1.2rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+
+  margin: 10px 0;
+}
+
+.icons .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #185b34;
+  font-size: 2rem;
+
+  height: 2.8rem;
+  width: 2.8rem;
+
+  background-color: white;
+  border-radius: 50%;
+
+  cursor: pointer;
+}
