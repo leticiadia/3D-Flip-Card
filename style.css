@@ -161,12 +161,16 @@ main {
   cursor: pointer;
 }
 
-/* Section - Resume */
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.6rem;
+}
+
 .skills h2 {
   color: #fff;
   font-size: 2.4rem;
-
-  margin-bottom: 0.8rem;
 
   position: relative;
   width: max-content;
@@ -225,6 +229,13 @@ main {
   margin-left: 4px;
 }
 
+.skills .columns .column .divide-x:last-child {
+  height: 0;
+  width: 0;
+  background: none;
+  margin-left: 0;
+}
+
 .skills .columns .column .content-row {
   display: flex;
   align-items: center;
@@ -269,5 +280,19 @@ main {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  main {
+    flex-direction: column;
+  }
+
+  .skills .columns {
+    flex-direction: column;
+  }
+
+  .skills .columns .column {
+    min-height: 32vh;
   }
 }
