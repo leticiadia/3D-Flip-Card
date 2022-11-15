@@ -17,16 +17,25 @@ body {
   background: linear-gradient(45deg, #0f2b05 0%, #000 100%);
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  min-height: 100vh;
+header {
+  padding: 2.4rem 0;
 }
 
-.card,
+header .image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3.2rem;
+
+  min-height: 80vh;
+}
+
 .front-card,
 .content,
 .back-card {
@@ -34,6 +43,7 @@ main {
 }
 
 .card {
+  position: relative;
   height: 24rem;
   width: 16rem;
 
@@ -146,6 +156,73 @@ main {
 
   background-color: white;
   border-radius: 50%;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   cursor: pointer;
+}
+
+/* Section - Resume */
+.resume {
+  color: white;
+}
+
+.resume .title-main {
+  font-size: 2rem;
+  margin-bottom: 0.8rem;
+}
+
+.list-front {
+  display: flex;
+  align-items: center;
+
+  gap: 5.6rem;
+  padding: 1.6rem 0;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 1.6rem;
+}
+
+.list-front .row {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-bottom: 8px;
+}
+
+.list-front .row-front {
+  display: flex;
+  align-items: center;
+
+  margin-bottom: 8px;
+}
+
+.list-front .row-front p {
+  padding: 0 0.8rem;
+}
+
+.list-front .row .circle {
+  color: #fff;
+  font-size: 2rem;
+
+  height: 0.6rem;
+  width: 0.6rem;
+
+  background-color: #22c55e;
+  border-radius: 50%;
+  filter: blur(4px);
+}
+
+.list-front .row p {
+  font-size: 16px;
+  margin-left: 8px;
+}
+
+.line {
+  height: 2rem;
+  width: 0.1rem;
+  background: rgba(34, 197, 94, 0.2);
+  margin-left: 4px;
 }
