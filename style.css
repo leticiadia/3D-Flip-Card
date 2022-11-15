@@ -143,6 +143,10 @@ main {
   margin: 10px 0;
 }
 
+.icons a {
+  text-decoration: none;
+}
+
 .icons .icon {
   display: flex;
   align-items: center;
