@@ -1,6 +1,6 @@
 ## 🖼️ Preview
 
-![to-do-list](/assets/images/preview.png)
+![3D-Flip-Card](/assets/images/preview.png)
 
 <h1 align="center">3D FLIP CARD</h1>
 
