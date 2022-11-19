@@ -22,7 +22,7 @@
     The purpose of using this effect on the card was to learn more about 3D animations and transitions with CSS.
 </p>
 
-## I learned
+## 📖 I learned
 
 <p>I will briefly tell you about some things I learned doing this 3D Flip Card project. Before explaining how I learned it is important to talk about what the Flip Cards effect is.</p>
 
