@@ -32,12 +32,12 @@
 
 ### How so 🤔?
 
-<p>Think like you have a card right, that card has the front and the back right?</p>
+<p>Think like you have a card, that card has the front and the back, right?</p>
 <p>If you want to see the back of the card, you'll need to rotate it so you can see what's behind it. And it is precisely this effect that I created on the card.</p>
 
 ### 3D Flip Card
 
-<p>Now that we understand a little bit about the Flip card effect, I will briefly explain what I learned about creating this effect.</p>
+<p>Now that we understood a little bit about the Flip card effect, I will briefly explain what I learned about creating this effect.</p>
 
 #### To create this effect, I needed to use some properties:
 
